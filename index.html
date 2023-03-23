@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/all.min.css">
+    <link rel="stylesheet" href="/Css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="superCon">
+        <aside class="sidebar" id="sidebar">
+            <button class="ButtonShow" id="ButtonShow"><i class="fa fa-gear iconButton" id="iconButton"></i></button>
+            <button class="Clear" id="Clear"><i class="fa fa-repeat iconButton" aria-hidden="true" id="ClearButton" onclick="clearAll()"></i></button>
+            <div class="conLogo">
+                <i class="fa fa-list fa-fw iconLogo"><span class="logo">Todo</span></i>
+            </div>
+            <ul class="ColorList">
+                <li class="colorItem" id="colorItem1"><span class="colorSpan" id="colorSpan1"></span></li>
+                <li class="colorItem" id="colorItem2"><span class="colorSpan" id="colorSpan2"></span></li>
+                <li class="colorItem" id="colorItem3"><span class="colorSpan" id="colorSpan3"></span></li>
+                <li class="colorItem" id="colorItem4"><span class="colorSpan" id="colorSpan4"></span></li>
+            </ul>
+        </aside>
+        <main class="content" id="content">
+            <section class="supmitTask" id="supmitTask">
+                <input type="text" name="addTask" id="addTask">
+                <button id="addTaskButton"><i class="addButton fa fa-plus"></i></button>
+            </section>
+            <section class="taskes" id="taskes">
+            </section>
+        </main>
+    </div>
+    <script src="/Js/main.js"></script>
+</body>
+</html>
